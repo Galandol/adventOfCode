@@ -1,3 +1,5 @@
+package pl.advent;
+
 /**
  * Interfejs do pierwszego dnia AdventIoCode.
  *
@@ -22,7 +24,7 @@ public interface ActivistDay1 {
      * @param number liczba do dodania
      * @return nowy wynik
      */
-    Integer add(Integer result, Integer number);
+    long add(long result, long number);
 
     /**
      * Odejmuje podaną liczbę od wyniku
@@ -31,7 +33,7 @@ public interface ActivistDay1 {
      * @param number liczba do odjęcia
      * @return nowy wynik
      */
-    Integer substract(Integer result, Integer number);
+    long subtract(long result, long number);
 
     /**
      * Zwraca czy dany wiersz powinniśmy dodać czy odjąć od wyniku
