@@ -13,16 +13,19 @@ public class Day1 implements ActivistDay1 {
 
     @Override
     public long add(long result, long number) {
-        return 0;
+        return result + number;
     }
 
     @Override
     public long subtract(long result, long number) {
-        return 0;
+        return result - number;
     }
 
     @Override
     public boolean decideIfAdd(String row) {
-        return false;
+        char adding = '+';
+        char firstChar = row.charAt(0);
+
+        return adding == firstChar;
     }
 }
