@@ -49,6 +49,6 @@ public class Day1 implements ActivistDay1 {
 
     @Override
     public boolean checkIfDuplicate(List<Long> resultsList, long newResult) {
-        return false;
+        return resultsList.contains(newResult);
     }
 }
