@@ -1,7 +1,9 @@
 package test;
 
-
 import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.Test;
 import org.junit.Before;
@@ -52,5 +54,27 @@ public class Day1Test {
         String rowToSubtract = "-1";
 
         assertEquals(false, testClass.decideIfAdd(rowToSubtract));
+    }
+
+    @Test
+    public void testIfNewResultIsOnTheResultsList_resultsInTrue() {
+        List<Long> resultsList = new ArrayList<>();
+        resultsList.add(10L);
+        resultsList.add(123L);
+
+        long newResult = 10L;
+
+        assertEquals(true, testClass.checkIfDuplicate(resultsList, newResult));
+    }
+
+    @Test
+    public void testIfNewResultIsOnTheResultsList_resultsInFalse() {
+        List<Long> resultsList = new ArrayList<>();
+        resultsList.add(10L);
+        resultsList.add(123L);
+
+        long newResult = 1L;
+
+        assertEquals(false, testClass.checkIfDuplicate(resultsList, newResult));
     }
 } 

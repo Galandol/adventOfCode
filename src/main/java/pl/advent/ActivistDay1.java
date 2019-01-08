@@ -1,5 +1,7 @@
 package pl.advent;
 
+import java.util.List;
+
 /**
  * Interfejs do pierwszego dnia AdventIoCode.
  *
@@ -42,4 +44,13 @@ public interface ActivistDay1 {
      * @return prawda, jeśli mamy dodać
      */
     boolean decideIfAdd(String row);
+
+    /**
+     * Sprawdza czy wśród wyników jest już ten który właśnie otrzymaliśmy
+     *
+     * @param resultsList lista obecnych wyników
+     * @param newResult nowo otrzymany wynik
+     * @return prawda, jeśli nowy wynik już znajduje się na liście
+     */
+    boolean checkIfDuplicate(List<Long> resultsList, long newResult);
 }

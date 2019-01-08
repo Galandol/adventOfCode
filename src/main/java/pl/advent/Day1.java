@@ -46,4 +46,9 @@ public class Day1 implements ActivistDay1 {
         }
         return list;
     }
+
+    @Override
+    public boolean checkIfDuplicate(List<Long> resultsList, long newResult) {
+        return false;
+    }
 }
